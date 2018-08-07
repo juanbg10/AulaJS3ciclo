@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+    
+    <head>
+        <!--11/05/2018-->  
+        <script type="text/javascript">
+        
+    //forEach        vetor ou ação
+            function teste(){ //DOM faz Slice para pegar so array
+                var divs = document.querySelectorAll("div");
+                var divSlice = Array.prototype.slice.call(divs);
+                //O DivSlice contem só a parte Array
+                divSlice.forEach(function(div){
+                        div.style.backgroundColor = "#bbee78";
+                    });
+                }
+                
+  //MAP     retorno e sequenciar         
+            function teste2(){
+                //Nesse caso não é necessario o Slice.
+                var listaInt = [1, 2, 3, 4, 5, 6, 7, 8];
+                var novaLista = listaInt.map(function(x){
+                    return(x*x); //retorna ao quadrado
+                    });
+                alert(novaLista);
+                }
+                
+ //MAP      elimina falso da lista
+            function teste22(){
+                 //Nesse caso não é necessario o Slice.
+                 var listaInt = [1, 2, 3, 4, 5, 6, 7, 8];
+                 var ul = document.createELement("ul");
+                    listaInt.map(function(x){
+                     return x*x;
+                   }).froEach(function(x){
+                       var li =document.createElement("li");
+                       li.innerHTML = x;
+                       ul.appendChild(li);
+                    });
+                    
+                    document.body.appendChild(ul);
+                }
+                
+                
+            function teste3(){
+                var todasDivs = document.querySelectorAll("div");
+                var divSlice = Array.prototype.slice.call(todasDivs);
+                divSlice.filter(function(x) {
+                   "div".className != "classe1";
+                                          
+                   }).forEach(function(div){
+                        div.style.backgroundColor = "yellow";
+                });
+                
+            }
+
+
+//REDUCE    fazer contadores e acumuladores
+            function teste4(){
+                    var listInt = [2,4,5,2,5];
+                    var soma= 0;
+                    for(var i=0; i < listInt.length; i++){
+                       soma = soma + listInt[i]; 
+                    }
+                    alert(soma);
+                    var listaReduzida = listInt.reduce(function(x,y){
+                       return x+y; 
+                    },0)
+                    alert(listaReduzida);
+            }
+            
+//-------------------------------------------------------
+            function criarEVento(){
+                document.querySelector("button").addEventListener("click", function(){
+                   teste(); 
+                   //<button>Go</button>
+                });
+            }
+        </script>
+        <meta charset = "utf-8">
+        <title>Aula 14</title>
+    </head>
+    
+    <body>
+        <div class="botao" class="classe1"><h1>div1</h1></div>
+        <div class="botao"><h1>div2</h1></div>
+        <div class="botao"class="classe1"><h1>div3</h1></div>
+        <div class="botao"><h1>div4</h1></div>
+        <!--<button onclick="teste()">GO</button>-->
+        <button onclick="teste3();">GO</button>
+    </body>
+    
+</html>
+
+    

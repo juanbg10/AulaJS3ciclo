@@ -1,0 +1,18 @@
+Funçoes
+
+aula passada -->
+	1. Funções são tratadas como valores; 
+	2. Uma função pode ser passada, ou retornada;
+	3. Pode-se alocar funções a variaveis; 
+	4. aplicação Ajax.
+
+
+Transversal(percorrer) de Listas(Array) - usando funções de alta ordem -->
+	1.ForEach: sem retorno. Aplica-se uma função(f), **SEM RETORNO**, a uma lista. 
+	Todos os elemnetos desta serão parâmetros de (f).
+
+//Você passa a tarefa em uma função e ele já fa o For
+
+   f[e1, e2, e3, ... , eN] ---->  [f(e1), f(e2), f(e3), ... , f(eN)]
+
+	Obs: O vetor qcima representa uma ação de f nos elementos.

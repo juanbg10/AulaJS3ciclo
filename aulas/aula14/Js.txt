@@ -1,0 +1,57 @@
+_________________
+|____Funçoes_____|
+
+
+Aula passada -->
+
+
+	1. Funçoes sao tratadas como valores; 
+	2. Uma funçao pode ser passada, ou retornada;
+	3. Pode-se alocar funções a variaveis; 
+	4. aplicação Ajax.
+
+-----------------------------------------------------------------------------------
+1 - Transversal(percorrer) de Listas(Array) - usando funções de alta ordem -->
+	1.ForEach: sem retorno. Aplica-se uma função(f), **SEM RETORNO**, a uma lista. 
+	Todos os elemnetos desta serão parametros de (f).
+
+//Você passa a tarefa em uma função e ele já da o for.
+
+    f[e1, e2, e3, ... , eN] ---->  [f(e1), f(e2), f(e3), ... , f(eN)]
+
+	Obs: O vetor acima representa uma açao de f nos elementos.
+	
+	tipo abstrato de dados -->Pilha Fila
+
+-------------------------------------------------------------------------------------	
+2 - Map: com retorno. Aplica-se uma função f, **COM RETORNO**, a uma lista.
+Todos os elementos desta serão parâmetros de f. O Map produz uma nova lista
+com elementos tratados.
+
+-------------------------------------------------------------------------------------
+3 - Filter: com retorno Booleano. Aplica-se uma função, **COM RETORNO BOOLEANO**,
+a uma lista. Todos os elementos desta serão parametros de f. O Filter eliminará,
+da lista, todos os retornos false.
+
+-------------------------------------------------------------------------------------
+
+4 - Reduce(Fold) Contadores e Acumuladores: com retorno de operação binária. 
+Aplica-se à uma função f(com dois parametros agr), **RETORNA OPERAÇÂO BINÁRIA**, 
+a uma lista. A lista tambem será reduzida a um valor. 
+
+	obs1= f tem 2 parâmetros;
+	obs2= O reduce precisa de um valor inicial.
+	
+		f vi [e1, e2, e3]					Ex: reduce (+) 0 [1, 2, 3]
+		f f(ei, vi) [e2, e3]					(+)(3,(+)(2,(+)(0, 1)))
+		f f(f(ei, vi) [e3]								0 + 1 + 2 + 3 = 6
+		   
+		      |
+		      V
+		  f(e3,f(e2, f(e1, vi))) 
+		      
+		      
+-------------------------------------------------------------------------------------		      
+		      
+		      
+		      

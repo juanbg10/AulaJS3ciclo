@@ -1,0 +1,46 @@
+//---------------
+//function montaPagina3(objInsta){
+  //  alert("OK3");
+    //var divMaior = document.createElement("div");
+//    var media = 0;
+  //  for(var i=0;i<10;i++) {
+    //    var n = objInsta.data[i].likes.count;
+      //  media += parseInt(n);
+    //}
+    //media = media/20;
+    //divMaior.innerHTML = media;
+    //document.body.appendChild(divMaior);
+//}
+
+
+
+---------------------------
+
+
+        
+       
+     curl -F 'client_id=b51ddbcb67eb40aa855cd2ba59df2e46' \
+    -F 'client_secret=af867f55023e4b5eaeeaf6697fff7327' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=https://js-class-juanbg10.c9users.io/test/aula13/aula13.html' \
+    -F 'code=d9736f0b75d3459896e6dfddd931273e' \
+    https://api.instagram.com/oauth/access_token
+  
+  
+  
+  
+  
+//Client ID b51ddbcb67eb40aa855cd2ba59df2e46
+
+//Client Secret af867f55023e4b5eaeeaf6697fff7327
+
+//9972e8870db843fcbe5a5bb061921ddd
+
+
+{"access_token": "197281134.b51ddbc.2420d8730e0c4869ae5343ad89eced45", 
+"user": {"id": "197281134", 
+"username": "juanbg_10", 
+"profile_picture": "https://scontent.cdninstagram.com/vp/dc77faf7225ff352e698e43c7e8f99ce/5B8F7075/t51.2885-19/s150x150/28751158_453432335112135_9025568769736441856_n.jpg", 
+"full_name": "Juan Bertoluzzi Garcia", 
+"bio": "013 | Santos (SP)\u2693\ufe0f\nSI - Faculdade de Tecnologia Estadual \u270f\ufe0f\ud83d\udcbb", 
+"website": "http://jw.org/", "is_business": false}}

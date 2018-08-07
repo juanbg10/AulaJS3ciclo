@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <script>
+            function pegarCodigo(){
+                var url = new URL(window.location.href);//url local da pagina
+                var c = url.searchParams.get("code");
+                var div = document.getElementById("codigo");
+                div.innerHTML = c;
+            }
+            
+            window.onload = pegarCodigo;
+        </script>
+        <meta charset= "utf-8">
+        <title>Documento API</title>
+    </head>
+    
+    <body>
+       <div id="codigo"></div>
+    </body>
+    
+</html>

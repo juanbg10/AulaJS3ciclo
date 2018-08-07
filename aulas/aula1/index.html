@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+       <script>
+               function ola(){
+                   alert("OLA MUNDO");
+               }
+               
+               //ls é uma lista/vetor
+               function somar(ls){
+                   var soma=0; //sem var a variavel é global
+                   for(var i in ls) //(var i=0; i <somar.length; i++)
+                   {
+                    soma = soma + ls[i];
+                   }
+                   return soma;
+                   
+               }
+               
+               function contaPares(ls){
+                   var kter = 0; //geralmente quando tem lista tem for
+                   for(var i in ls){
+                       if(ls[i] % 2 == 0){
+                           kter++;
+                       }    
+                       return kter;
+                   }
+               }
+               
+               function retornMaior(ls){
+                   var maior=ls[0];
+                   for(var i in ls){
+                       if(ls[i]>maior)
+                       maior = ls[i];
+                        
+                   }
+                   return (maior);
+               }
+               
+               function retornMenor(ls){
+                   var menor = ls[0];
+                   for(var i in ls){
+                       if(ls[i]<menor){
+                         menor = ls[i];
+                       }
+                   }
+                   return (menor);
+               }
+               
+               //{chaves:valores,...} não precisa ser inteiro --->Json
+               
+               //function maiorMenor(ls){
+                   //var maior=ls[0];
+                   //var menor=ls[0];
+                  // for (var i in ls){
+                      // maior=Math.max(maior.ls[i]);
+                       //menor=Math.min(menor.ls[i]);
+                  // }
+                   //return["maior":maior, "menor":menor]
+              // }
+       </script>
+   </head>
+    <body>
+               <!--<script>var vetor=[1, 7, 4, 2, 6, 3, 0]; alert(contaPares(vetor));</script> -->
+              <!-- <script> document.write(vetor.menor); </script>
+                   <script> document.write(vetor.maior); </script>-->
+                <script> alert( contaPares([1, 7, 4, 2, 6, 3, 0]));</script> 
+                <script> document.write(retornMaior([1, 7, 4, 2, 6, 3, 0])+ "<br>"); </script>
+                <script> document.write(retornMenor([1, 7, 4, 2, 6, 3, 0])); </script>
+    </body>
+</html>
